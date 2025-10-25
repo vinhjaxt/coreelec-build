@@ -18,7 +18,7 @@ jobs:
         run: |
           sudo apt update -y
           # sudo apt install -y build-essential git python3
-          sudo apt install -y make gcc git python3
+          sudo apt install -y make gcc git python3 xfonts-utils rdfind libparse-yapp-perl gperf xsltproc libxml-parser-perl patchutils lzop
           git clone --single-branch --depth=1 --recurse-submodules https://github.com/CoreELEC/CoreELEC
           cd CoreELEC
           DEVICE=Amlogic-no ARCH=aarch64 make
