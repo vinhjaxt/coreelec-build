@@ -10,9 +10,11 @@ useradd user
 mkdir /home/user
 chown user:user /home/user /CoreELEC -R
 
-apt install -y sudo visudo nano vim cpio rsync
+apt install -y sudo nano vim cpio rsync
 apt install -y make gcc git python3 xfonts-utils rdfind libparse-yapp-perl gperf xsltproc libxml-parser-perl patchutils lzop
 
+su user
+bash
 # Optional: modify kernel config at /CoreELEC/projects/Amlogic-ce/devices/Amlogic-no/linux/linux.aarch64.conf
 DEVICE=Amlogic-no ARCH=aarch64 make image
 
